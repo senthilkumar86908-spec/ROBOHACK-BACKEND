@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
 async function connectDB() {
-  const uri = process.env.MONGODB_URI;
+  // const uri = process.env.MONGODB_URI;
+  const uri = "mongodb+srv://senthil:senthilkavi0721@cluster0.322pc6n.mongodb.net/?appName=Cluster0"
 
   if (!uri) {
     throw new Error('MONGODB_URI is not set. Add it to backend/.env — see .env.example.');
