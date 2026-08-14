@@ -10,7 +10,6 @@ module.exports = async (req, res) => {
     if (!dbConnected) {
       await connectDB();
       dbConnected = true;
-      console.log("MongoDB connected");
     }
 
     return app(req, res);

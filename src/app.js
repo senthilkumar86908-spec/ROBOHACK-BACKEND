@@ -1,13 +1,13 @@
 const dns = require("dns");
 dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
-const express = require('express');
-const cors = require('cors');
-const helmet = require('helmet');
-const morgan = require('morgan');
+const express = require("express");
+const cors = require("cors");
+const helmet = require("helmet");
+const morgan = require("morgan");
 
-const registrationRoute = require('./routes/registrationRoute');
-const { notFound, errorHandler } = require('./middleware/errorMiddleware');
+const registrationRoute = require("./routes/registrationRoute");
+const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 
 const app = express();
 
